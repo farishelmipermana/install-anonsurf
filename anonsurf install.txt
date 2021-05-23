@@ -1,0 +1,20 @@
+$ git clone https://github.com/Und3rf10w/kali-anonsurf.git
+
+$ cd kali-anonsurf
+$ chmod +x installer.sh
+$ ./installer.sh
+$ anonsurf
+
+    start,	--> starts the anon mode
+    stop, 	--> finishes the anon session
+    restart, 	--> combines “stop” and “start” options
+    start-bridge, -->	starts system-wide Tor tunnel with Obfs4 bridge support
+    changeid,     -->	restarts Tor to change identity
+    enable-boot, 	enables Anonsurf at boot
+        Also by $ systemctl enable anonsurf
+    disable-boot, -->	disables Anonsurf at boot
+        Also by $ systemctl disable anonsurf
+    status, 	--> checks whether Anonsurf is working properly
+        Uses the Nyx application to display information about Tor service, bandwidth, nodes, etc.
+    myip, 	--> checks your IP and verifies your Tor connection
+    dns, 	--> replaces your DNS with the OpenNIC DNS servers.
